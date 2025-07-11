@@ -1,0 +1,28 @@
+redis-cluster:
+  enabled: false
+redis:
+  enabled: false
+postgresql:
+  enabled: false
+postgresql-ha:
+  enabled: false
+mysql:
+  enabled: true
+
+persistence:
+  enabled: true
+
+gitea:
+  config:
+    database:
+      DB_TYPE: sqlite3
+      # HOST: mysql
+      # NAME: mysql
+      # USER: root
+      # PASSWD: password
+    session:
+      PROVIDER: memory
+    cache:
+      ADAPTER: memory
+    queue:
+      TYPE: level
